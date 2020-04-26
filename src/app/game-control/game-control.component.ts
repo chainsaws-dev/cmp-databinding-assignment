@@ -7,6 +7,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class GameControlComponent implements OnInit {
   @Output() OnStartStopEvent: EventEmitter<boolean> = new EventEmitter<boolean>();
+  @Output() OnClearEvent: EventEmitter<void> = new EventEmitter();
 
   constructor() { }
 
@@ -15,6 +16,10 @@ export class GameControlComponent implements OnInit {
 
   OnStartStopClick(WeStart: boolean): void {
     this.OnStartStopEvent.emit(WeStart);
+  }
+
+  OnClearClick() {
+    this.OnClearEvent.emit();
   }
 
 }
