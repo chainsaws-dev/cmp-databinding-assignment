@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EvenComponent } from './even.component';
+import { OddEvenComponent } from './odd-even.component';
 
-describe('EvenComponent', () => {
-  let component: EvenComponent;
-  let fixture: ComponentFixture<EvenComponent>;
+describe('OddEvenComponent', () => {
+  let component: OddEvenComponent;
+  let fixture: ComponentFixture<OddEvenComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EvenComponent ]
+      declarations: [ OddEvenComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EvenComponent);
+    fixture = TestBed.createComponent(OddEvenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
