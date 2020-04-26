@@ -1,4 +1,6 @@
 <li class="list-group-item d-flex justify-content-between align-items-center">
-    {{OddEvenText}}
+    <div *ngIf="OddEvenText==='Odd!';then ifodd;else ifeven"></div>
+    <ng-template #ifodd>{{OddEvenText}}</ng-template>  
+    <ng-template #ifeven><b>{{OddEvenText}}</b></ng-template>        
     <span [(class)]="ClassNameBootstrap">{{AttemptNumber}}</span>
 </li>
