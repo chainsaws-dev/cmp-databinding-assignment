@@ -12,7 +12,7 @@ export class AppComponent {
   OnStartedStoped(WeStart: boolean) {
     if (this.WeStart !== WeStart) {
       this.WeStart = WeStart;
-      if(this.WeStart) {
+      if (this.WeStart) {
         this.StartGenerating();
       } else {
         this.StopGenerating();
