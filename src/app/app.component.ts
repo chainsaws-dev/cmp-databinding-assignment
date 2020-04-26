@@ -6,4 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  WeStart: boolean;
+
+  OnStartedStoped(WeStart: boolean) {
+    if (this.WeStart !== WeStart) {
+      this.WeStart = WeStart;
+      if(this.WeStart) {
+        this.StartGenerating();
+      } else {
+        this.StopGenerating();
+      }
+    }
+  }
+
+  StartGenerating() {
+
+  }
+
+  StopGenerating() {
+
+  }
 }
