@@ -37,5 +37,6 @@ export class AppComponent {
 
   ClearPageList() {
     this.AttemptsList.length = 0;
+    this.CurrentNumber = 0;
   }
 }
